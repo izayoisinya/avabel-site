@@ -76,7 +76,7 @@ nav {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
-  transform: translateX(calc(100% - 8px));
+  transform: translateX(100%); /* ←ここ重要 */
   transition: transform 0.3s ease;
   z-index: 20;
 }
@@ -429,9 +429,5 @@ nav {
   text-decoration: none;
 }
 
-/* ===== メニュー開いても本文動かさない ===== */
-body.menu-open main,
-body.menu-open header {
-  transform: none !important;
-}
+
 

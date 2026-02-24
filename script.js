@@ -26,7 +26,7 @@ document.addEventListener("touchstart", (e) => {
   
   const startX = e.touches[0].clientX;
   
-  if (startX > window.innerWidth - 40) {
+  if (startX > window.innerWidth - 80) {
     openMenu();
   }
 });
