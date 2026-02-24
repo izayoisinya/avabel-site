@@ -322,3 +322,116 @@ footer {
   background: #0ea5e9;
   box-shadow: 0 0 10px #38bdf8;
 }
+.article {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.article-title {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.article-lead {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #cbd5f5;
+}
+
+.box {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #38bdf8;
+}
+
+.box.warning {
+  border-left: 4px solid #f87171;
+}
+
+
+/* おすすめ */
+.box.good {
+  border-left: 5px solid #22c55e;
+  background: #052e1b;
+}
+
+/* 豆知識 */
+.box.tips {
+  border-left: 5px solid #eab308;
+  background: #3a2f00;
+}
+
+/* 強い */
+.box.strong {
+  border-left: 5px solid #ef4444;
+  background: #2a0202;
+}
+
+
+.menu-section {
+  padding: 10px 20px;
+  font-size: 13px;
+  color: #94a3b8;
+  background: #020617;
+  border-bottom: 1px solid #334155;
+}
+
+.article {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* 記事タイトル */
+.article-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #38bdf8;
+  padding-bottom: 10px;
+}
+
+/* リード文 */
+.article-lead {
+  background: #020617;
+  padding: 15px;
+  border: 1px solid #334155;
+  border-left: 4px solid #38bdf8;
+  margin-bottom: 20px;
+}
+
+/* 基本box */
+.box {
+  background: #020617;
+  border: 1px solid #334155;
+  padding: 15px;
+  margin: 20px 0;
+  border-left: 4px solid #38bdf8;
+}
+
+/* 注意 */
+.box.warning {
+  border-left: 4px solid #ef4444;
+  background: #2a0202;
+}
+
+
+/* メニューだけスクロール可能 */
+nav {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.site-title a {
+  font-size: 28px;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ===== メニュー開いても本文動かさない ===== */
+body.menu-open main,
+body.menu-open header {
+  transform: none !important;
+}
+
