@@ -1,115 +1,131 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>アヴァベル攻略メモ</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body>
-    <header>
-      <div class="header-inner">
-        <h1><a href="index.html">アヴァベル攻略メモ</a></h1>
+<title>【アヴァベルオンライン攻略】初心者・無課金向け完全ガイド</title>
+<meta name="description" content="アヴァベルオンラインの無課金攻略サイト。初心者の進め方、職業、レベル上げ、金策などを分かりやすく解説。">
 
-        <a
-          href="https://twitter.com/AVABEL666"
-          target="_blank"
-          class="header-x"
-        >
-          X
-        </a>
-      </div>
-    </header>
+<link rel="canonical" href="https://izayoisinya.github.io/avabel-site/">
 
-    <nav id="nav">
-      <div class="menu-title">MENU</div>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 
-      <a href="index.html">ホーム</a>
+<!-- OGP（トップは website） -->
+<meta property="og:title" content="アヴァベルオンライン攻略まとめ">
+<meta property="og:description" content="初心者・無課金向け攻略サイト">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://izayoisinya.github.io/avabel-site/">
+<meta property="og:image" content="https://izayoisinya.github.io/avabel-site/Images/ogp.png">
 
-      <div class="menu-section">▼初心者ガイド</div>
-      <a href="beginner.html">最初にやること</a>
-      <a href="#">毎日やること</a>
-      <a href="#">レベル上げ</a>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="アヴァベルオンライン攻略まとめ">
+<meta name="twitter:description" content="初心者・無課金向け攻略サイト">
+<meta name="twitter:image" content="https://izayoisinya.github.io/avabel-site/Images/ogp.png">
+</head>
 
-      <div class="menu-section">▼育成</div>
-      <a href="jobs.html">職業</a>
-      <a href="#">装備</a>
-      <a href="#">強化</a>
+<body>
 
-      <div class="menu-section">▼データ</div>
-      <a href="#">金策</a>
-      <a href="#">おすすめ狩場</a>
+<!-- ===== 共通ヘッダー ===== -->
+<header>
+<div class="header-inner">
+<h1 class="site-title">
+<a href="index.html">アヴァベル攻略メモ</a>
+</h1>
 
-      <a href="diary.html">日記</a>
-      <div class="x-widget">
-        <h3>X更新情報</h3>
+<a href="https://twitter.com/AVABEL666" target="_blank" class="header-x">X</a>
+</div>
+</header>
 
-        <p>最新の攻略メモはXでも発信しています。</p>
+<!-- ===== 共通メニュー ===== -->
+<nav id="nav">
 
-        <a
-          href="https://twitter.com/AVABEL666"
-          target="_blank"
-          rel="noopener"
-          class="x-button"
-        >
-          Xで最新情報を見る
-        </a>
-      </div>
-    </nav>
+<div class="menu-title">MENU</div>
+<a href="index.html">ホーム</a>
 
-    <!-- オーバーレイ -->
-    <div class="overlay" id="overlay"></div>
+<div class="menu-section">▼初心者ガイド</div>
+<a href="beginner.html">最初にやること</a>
+<a href="#">毎日やること</a>
+<a href="#">レベル上げ</a>
 
-    <main>
-      <section>
-        <h2>最新記事</h2>
-        <div class="card-container">
-          <div class="card">
-            <div class="card-image">
-              <img src="Images/beginner.png" />
-              <div class="card-title">
-                <h3>初心者の進め方</h3>
-                <p>序盤でやるべきこと</p>
-              </div>
-            </div>
-            <a href="beginner.html" class="button">読む</a>
-          </div>
+<div class="menu-section">▼育成</div>
+<a href="jobs.html">職業</a>
+<a href="#">装備</a>
+<a href="#">強化</a>
 
-          <div class="card">
-            <div class="card-image">
-              <img src="Images/job.png" />
-              <div class="card-title">
-                <h3>最強職ランキング</h3>
-                <p>おすすめ職を紹介</p>
-              </div>
-            </div>
-            <a href="#" class="button">読む</a>
-          </div>
-        </div>
-      </section>
+<div class="menu-section">▼データ</div>
+<a href="#">金策</a>
+<a href="#">おすすめ狩場</a>
 
-      <section>
-        <h2>このサイトについて</h2>
-        <p>アヴァベルオンラインを無課金で楽しむための攻略メモです。</p>
-      </section>
-    </main>
+<a href="diary.html">日記</a>
 
-    <footer>
-      <div class="footer-inner">
-        <p>© 2026 アヴァベル攻略メモ</p>
-        <p>※このサイトは非公式の攻略情報サイトです。公式とは関係ありません。</p>
-        <div class="footer-links">
-          <a href="privacy.html">プライバシーポリシー</a>
-          <a href="terms.html">利用規約</a>
-        </div>
-      </div>
-    </footer>
+<div class="x-widget">
+<h3>X更新情報</h3>
+<p>最新攻略はXでも発信</p>
+<a href="https://twitter.com/AVABEL666" target="_blank" class="x-button">Xを見る</a>
+</div>
 
-    <script src="script.js"></script>
-  </body>
+</nav>
+
+<div class="overlay" id="overlay"></div>
+
+<!-- ===== メイン（トップ専用） ===== -->
+<main>
+
+<section class="box">
+<h2>アヴァベルオンライン攻略サイト</h2>
+<p>
+無課金・初心者向け攻略まとめ。  
+職業・装備・レベル上げ・金策を分かりやすく解説。
+</p>
+</section>
+
+<section>
+<h2>最新記事</h2>
+
+<div class="card-container">
+
+<div class="card">
+<div class="card-image">
+<img src="Images/beginner.png">
+<div class="card-title">
+<h3>初心者の進め方</h3>
+<p>序盤でやるべきこと</p>
+</div>
+</div>
+<a href="beginner.html" class="button">読む</a>
+</div>
+
+<div class="card">
+<div class="card-image">
+<img src="Images/job.png">
+<div class="card-title">
+<h3>最強職ランキング</h3>
+<p>おすすめ職</p>
+</div>
+</div>
+<a href="#" class="button">読む</a>
+</div>
+
+</div>
+</section>
+
+</main>
+
+<!-- ===== 共通フッター ===== -->
+<footer>
+<div class="footer-inner">
+<p>© 2026 アヴァベル攻略メモ</p>
+<p>※非公式攻略サイトです</p>
+
+<div class="footer-links">
+<a href="privacy.html">プライバシー</a>
+<a href="terms.html">利用規約</a>
+</div>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
