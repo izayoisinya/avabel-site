@@ -39,6 +39,29 @@ header h1 a:hover {
   /* 好みで下線もOK */
 }
 
+/* ヘッダーXボタン */
+
+.header-x{
+  margin-left:auto;
+  width:42px;
+  height:42px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#38bdf8;
+  color:#020617;
+  font-weight:bold;
+  text-decoration:none;
+  border-radius:50%;
+  font-size:16px;
+  transition:.3s;
+}
+
+.header-x:hover{
+  background:#0ea5e9;
+  box-shadow:0 0 10px #38bdf8;
+}
+
 /* ===== デフォルト（スマホ/右スライド） ===== */
 nav {
   position: fixed;
@@ -47,12 +70,13 @@ nav {
   width: 260px;
   height: 100%;
   background: #020617;
+  border-top: 1px solid #334155;
   border-left: 2px solid #38bdf8;
   box-shadow: -5px 0 20px rgba(0,0,0,0.5);
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
-  transform: translateX(97%);
+  padding-top: 20px;
+  transform: translateX(calc(100% - 8px));
   transition: transform 0.3s ease;
   z-index: 20;
 }
@@ -68,6 +92,9 @@ nav.active {
   margin-bottom: 10px;
   font-weight: bold;
   letter-spacing: 2px;
+  border-bottom: 1px solid #334155;
+  padding: 0 0 18px 0;
+  margin: 0 0 0px 0;
 }
 
 /* メニューリンク */
@@ -233,6 +260,7 @@ footer {
 
 /* ===== PC（左固定メニュー） ===== */
 @media (min-width: 1024px) {
+
   nav {
     left: 0;
     right: auto;
@@ -248,35 +276,49 @@ footer {
     display: none;
   }
 
-  /* 左メニューの幅分、mainを右にずらす */
-  main {
-    margin-left: 260px;
-    /* navの幅に合わせる */
-  }
-
-  /* 必要に応じてヘッダーもずらす */
+  /* 左メニュー分ずらす */
+  main,
   header {
     margin-left: 260px;
   }
+
 }
 
-/* ===== Xウィジェット ===== */
+/* ===== Xウィジェット（メニュー内統一） ===== */
 .x-widget {
-  margin-top: 20px;
-  padding: 10px;
+  margin-top: 10px;
+  padding: 15px 20px;
   border-top: 1px solid #334155;
 }
 
+/* タイトル */
 .x-widget h3 {
   font-size: 14px;
   color: #38bdf8;
-  margin-bottom: 10px;
-  text-align: center;
+  margin: 0 0 8px 0;
 }
 
-/* PC専用（左固定メニュー時だけ表示） */
-@media (max-width: 1023px) {
-  .x-widget {
-    display: none;
-  }
+/* 説明文 */
+.x-widget p {
+  font-size: 13px;
+  margin: 0 0 10px 0;
+  color: #cbd5f5;
+}
+
+/* Xボタン */
+.x-button {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  background: #38bdf8;
+  color: #020617;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.x-button:hover {
+  background: #0ea5e9;
+  box-shadow: 0 0 10px #38bdf8;
 }
