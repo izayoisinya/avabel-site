@@ -1,140 +1,176 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- ===== ここだけ変更 ===== -->
-  <title>記事タイトル</title>
-  <meta name="description" content="記事説明（検索結果に出る）">
-  <link rel="canonical" href="https://izayoisinya.github.io/avabel-site/ページURL.html">
-  
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-  
-  <!-- ===== OGP（ここも記事ごと変更） ===== -->
-  <meta property="og:title" content="記事タイトル">
-  <meta property="og:description" content="記事説明">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://izayoisinya.github.io/avabel-site/ページURL.html">
-  <meta property="og:image" content="https://izayoisinya.github.io/avabel-site/Images/ogp.png">
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="記事タイトル">
-  <meta name="twitter:description" content="記事説明">
-  <meta name="twitter:image" content="https://izayoisinya.github.io/avabel-site/Images/ogp.png">
-  
-</head>
+    <!-- ===== ここだけ変更 ===== -->
+    <title>記事タイトル</title>
+    <meta name="description" content="記事説明（検索結果に出る）" />
+    <link
+      rel="canonical"
+      href="https://izayoisinya.github.io/avabel-site/ページURL.html"
+    />
 
-<body>
-  
-  <!-- ===== ヘッダー（共通） ===== -->
-  <header>
-    <div class="header-inner">
-      
-      <h1 class="site-title">
-        <a href="index.html">アヴァベル攻略メモ</a>
-      </h1>
-      
-      <a href="https://twitter.com/AVABEL666" target="_blank" class="header-x">X</a>
-      
-    </div>
-  </header>
-  
-  <!-- ===== メニュー（共通） ===== -->
-  <nav id="nav">
-    
-    <div class="menu-title">MENU</div>
-    <a href="index.html">ホーム</a>
-    
-    <div class="menu-section">▼初心者ガイド</div>
-    <a href="beginner.html">最初にやること</a>
-    <a href="#">毎日やること</a>
-    <a href="#">レベル上げ</a>
-    
-    <div class="menu-section">▼育成</div>
-    <a href="jobs.html">職業</a>
-    <a href="#">装備</a>
-    <a href="#">強化</a>
-    
-    <div class="menu-section">▼データ</div>
-    <a href="#">金策</a>
-    <a href="#">おすすめ狩場</a>
-    
-    <a href="diary.html">日記</a>
-    
-    <div class="x-widget">
-      <h3>X更新情報</h3>
-      <p>最新攻略はXでも発信</p>
-      
-      <a href="https://twitter.com/AVABEL666" target="_blank" class="x-button">
-        Xを見る
-      </a>
-    </div>
-    
-  </nav>
-  
-  <div class="overlay" id="overlay"></div>
-  
-  <!-- ===== メイン（ここだけ毎回書く） ===== -->
-  <main>
-    
-    <!-- パンくず -->
-    <div class="breadcrumb">
-      <a href="index.html">ホーム</a> ＞ 記事タイトル
-    </div>
-    
-    <article class="article">
-      
-      <h1 class="article-title">記事タイトル</h1>
-      
-      <p class="article-lead">
-        この記事では〇〇を解説します。
-      </p>
-      
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ===== OGP（ここも記事ごと変更） ===== -->
+    <meta property="og:title" content="記事タイトル" />
+    <meta property="og:description" content="記事説明" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://izayoisinya.github.io/avabel-site/ページURL.html"
+    />
+    <meta
+      property="og:image"
+      content="https://izayoisinya.github.io/avabel-site/Images/ogp.png"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="記事タイトル" />
+    <meta name="twitter:description" content="記事説明" />
+    <meta
+      name="twitter:image"
+      content="https://izayoisinya.github.io/avabel-site/Images/ogp.png"
+    />
+  </head>
+
+  <body>
+    <!-- ===== 共通ヘッダー ===== -->
+    <header>
+      <div class="header-inner">
+        <div class="site-title">
+          <a href="index.html">
+            アヴァベルオンライン攻略<br />
+            初心者・無課金向け完全ガイド
+          </a>
+        </div>
+        <a href="https://twitter.com/AVABEL666" target="_blank" class="header-x"
+          >X</a
+        >
+      </div>
+    </header>
+
+    <!-- ===== 共通メニュー ===== -->
+    <nav id="nav">
+      <div class="menu-title">MENU</div>
+      <a href="index.html">ホーム</a>
+
+      <div class="menu-group">
+        <div class="menu-section">初心者ガイド</div>
+        <div class="menu-sub">
+          <a href="beginner.html">最初にやること</a>
+          <a href="equip.html">初心者装備解説</a>
+          <a href="#">テストa</a>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-section">テスト1</div>
+        <div class="menu-sub">
+          <a href="#">テストb</a>
+          <a href="#">テストc</a>
+          <a href="#">テストd</a>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-section">テスト2</div>
+        <div class="menu-sub">
+          <a href="#">テストe</a>
+          <a href="#">テストf</a>
+        </div>
+      </div>
+
+      <a href="diary.html">テスト（旧日記）</a>
+
+      <div class="x-widget">
+        <h3>X更新情報</h3>
+        <p>最新攻略はXでも発信</p>
+        <a href="https://twitter.com/AVABEL666" target="_blank" class="x-button"
+          >Xを見る</a
+        >
+      </div>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- ===== メイン（ここだけ毎回書く） ===== -->
+    <main>
+      <!-- パンくず -->
+      <div class="breadcrumb">
+        <a href="index.html">ホーム</a> ＞ 記事タイトル
+      </div>
+
+      <article class="article">
+        <h1 class="article-title">記事タイトル</h1>
+
+        <p class="article-lead">この記事では〇〇を解説します。</p>
+
+        <div class="box">
+          <h2>見出し</h2>
+          <p>内容</p>
+        </div>
+
+        <div class="box good">
+          <h2>おすすめ</h2>
+          <p>内容</p>
+        </div>
+
+        <div class="box warning">
+          <h2>注意</h2>
+          <p>内容</p>
+        </div>
+      </article>
+
+      <!-- 関連記事 -->
       <div class="box">
-        <h2>見出し</h2>
-        <p>内容</p>
+        <h2>関連記事</h2>
+        <ul>
+          <li><a href="#">おすすめ職業</a></li>
+          <li><a href="#">金策</a></li>
+        </ul>
       </div>
-      
-      <div class="box good">
-        <h2>おすすめ</h2>
-        <p>内容</p>
-      </div>
-      
-      <div class="box warning">
-        <h2>注意</h2>
-        <p>内容</p>
-      </div>
-      
-    </article>
-    
-    <!-- 関連記事 -->
-    <div class="box">
-      <h2>関連記事</h2>
-      <ul>
-        <li><a href="#">おすすめ職業</a></li>
-        <li><a href="#">金策</a></li>
-      </ul>
-    </div>
-    
-  </main>
-  
-  <!-- ===== フッター（共通） ===== -->
-  <footer>
-    <div class="footer-inner">
-      <p>© 2026 アヴァベル攻略メモ</p>
-      <p>※非公式攻略サイトです</p>
-      
-      <div class="footer-links">
-        <a href="privacy.html">プライバシー</a>
-        <a href="terms.html">利用規約</a>
-      </div>
-    </div>
-  </footer>
-  
-  <script src="script.js"></script>
-</body>
+    </main>
 
+    <!-- ===== フッター（共通） ===== -->
+    <footer>
+      <div class="footer-inner">
+        <p>© 2026 アヴァベル攻略メモ</p>
+        <p>※非公式攻略サイトです</p>
+
+        <div class="footer-links">
+          <a href="privacy.html">プライバシー</a>
+          <a href="terms.html">利用規約</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "アヴァベルオンライン装備まとめ",
+        "description": "アヴァベルオンラインの装備・クリスタ・宝石・初心者向け最強装備を完全解説。",
+        "author": {
+          "@type": "Person",
+          "name": "アヴァベル攻略メモ"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "アヴァベル攻略メモ"
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://izayoisinya.github.io/avabel-site/equip.html"
+        }
+      }
+    </script>
+  </body>
 </html>
