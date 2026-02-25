@@ -47,3 +47,9 @@ nav.addEventListener("touchstart", (e) => {
     nav.removeEventListener("touchend", handler);
   });
 });
+
+document.querySelectorAll(".menu-section").forEach(section => {
+  section.addEventListener("click", () => {
+    section.parentElement.classList.toggle("open");
+  });
+});
