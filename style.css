@@ -531,6 +531,24 @@ text-decoration:none;
   margin-bottom: 6px;
 }
 
+/* リスト内の項目名を強調 */
+.term {
+  color: #38bdf8;
+  font-weight: 700;
+}
+
+/* 項目内の補足リスト（見やすく余白と区切り線を付ける） */
+.sub-list {
+  margin: 8px 0 14px;
+  padding-left: 22px;
+  border-left: 2px solid #334155;
+}
+
+.sub-list li {
+  margin-bottom: 5px;
+  color: #cbd5f5;
+}
+
 ol.point-list {
   padding-left: 34px;
 }
