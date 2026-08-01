@@ -593,6 +593,12 @@ text-decoration:none;
   margin-top: 30px;
 }
 
+/* box内の先頭見出しは上の空白を詰める */
+.box h2:first-child,
+.box h3:first-child {
+  margin-top: 0;
+}
+
 .article h3::after {
   content: "";
   position: absolute;
