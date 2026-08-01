@@ -531,6 +531,15 @@ text-decoration:none;
   margin-bottom: 6px;
 }
 
+ol.point-list {
+  padding-left: 34px;
+}
+
+/* ラベルの幅を揃えてコロン位置を揃える */
+.equip-list.fixed-label .label {
+  width: 100px;
+}
+
 
 .equip-list {
   list-style: none;
