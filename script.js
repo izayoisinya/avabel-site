@@ -48,8 +48,18 @@ nav.addEventListener("touchstart", (e) => {
   });
 });
 
-document.querySelectorAll(".menu-section").forEach(section => {
-  section.addEventListener("click", () => {
-    section.parentElement.classList.toggle("open");
+function bindMenuSections() {
+  document.querySelectorAll(".menu-section").forEach(section => {
+    section.addEventListener("click", () => {
+      section.parentElement.classList.toggle("open");
+    });
   });
-});
+}
+
+fetch("nav.html")
+  .then(res => res.text())
+  .then(html => {
+    nav.innerHTML = html;
+    bindMenuSections();
+  })
+  .catch(err => console.error("メニューの読み込みに失敗しました", err));
